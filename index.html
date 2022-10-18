@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM firebase</title>
+
+  <!-- config app -->
+  <script type="module" src="./firebase.js" defer ></script>
+  <script type="module" src="./index.js" defer ></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+
+  <div class="container p-4">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="h4"> Add Task</h1>
+
+            <form id="task-form">
+              <label for="task-title"> Title:</label><br>
+              <input class="form-control mb-1" type="text" placeholder="Task Title" id="task-title">
+              <br>
+              <br>
+              <label for="description">Description:</label><br>
+              <textarea class="form-control mb-1" placeholder="Task Description" id="task-description" cols="30" rows="10"></textarea>
+              <br><br>
+              <button class="btn btn-primary" id="btn-task-save">Save</button>
+            </form>
+
+          </div>
+
+          
+        </div>
+        
+      </div>
+      <div class="col-md-6" id="tasks-container">
+  
+      </div>
+
+      <div id="toastContainer" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded mr-2" alt="...">
+          <strong class="mr-auto">Bootstrap</strong>
+          <small class="text-muted">just now</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          See? Just like this.
+        </div>
+      </div>
+      
+      
+
+     
+    </div>
+    
+  </div>
+
+ 
+  
+</body>
+</html>
+
+
+  
+    
